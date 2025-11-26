@@ -1,6 +1,3 @@
-// lab3_var15.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 #include <map>
 #include <latch>
@@ -8,6 +5,7 @@
 #include <thread>
 #include <memory>
 #include <syncstream>
+
 
 struct Action
 {
@@ -36,6 +34,8 @@ void work(std::vector<Action> Actions, std::map<char, std::vector<char>> edges, 
         latchMap[Actions[n].name]->count_down();
     }
 }
+
+//Visual Studio 2022
 
 int main()
 {
